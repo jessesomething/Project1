@@ -1,19 +1,18 @@
 package com.jesselisa;
-import Java.util.*;
 
 public class Main {
 
-    public static void main() {
+    public static void main(String[] args) {
 
         for (int x = 1; x < 4; x++) {
             int suit = x;
-            int value;
+            int value = 0;
 
-            for (int x = 1; x < 14; x ++) {
-                value = x;
+            for (int y = 1; y < 14; y ++) {
+                value = y;
+                Card newcard = new Card (suit, value);
+                System.out.println(newcard);
             }
-            Card newcard = new Card (suit, value);
-            System.out.println(newcard);
         }
     }
 }
